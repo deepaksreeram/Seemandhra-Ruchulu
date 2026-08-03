@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seemandhra Ruchulu - Authentic Andhra Home Style Cuisine in Hyderabad</title>
+  <meta name="description"
+    content="Seemandhra Ruchulu brings authentic Andhra home-style breakfast & tiffins to Hyderabad. Taste Uggani Bajji, Gunta Ponganalu, Jonna Roti, Punugulu and Daily Specials. 100% Home Style Taste.">
+  <meta name="keywords"
+    content="Andhra food Hyderabad, Seemandhra Ruchulu, Uggani Bajji Hyderabad, Gunta Ponganalu, Andhra breakfast, home style food Hyderabad">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Poppins:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- ==========================================
+       HEADER & NAVIGATION
+       ========================================== -->
+  <header class="header" id="main-header">
+    <div class="nav-container">
+      <a href="#home" class="brand-wrapper" aria-label="Seemandhra Ruchulu Home">
+        <div class="logo-spot">
+          <img src="assets/images/logo.jpeg" alt="Seemandhra Ruchulu Logo Emblem">
+        </div>
+        <div class="brand-text">
+          <span class="brand-name">Seemandhra Ruchulu</span>
+          <span class="brand-tagline">Where tradition meets taste.</span>
+        </div>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#home" class="nav-link active">Home</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================
+         1. HOME / HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="badge-homestyle">
+          <i class="fas fa-award"></i> 100% Home Style Taste
+        </div>
+
+        <h1 class="hero-title">Seemandhra Ruchulu</h1>
+        <p class="hero-tagline">Where tradition meets taste.</p>
+
+        <div class="quick-info-bar">
+          <div class="quick-info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Madhapur & Kukatpally, Hyderabad</span>
+          </div>
+          <div class="quick-info-item">
+            <i class="fas fa-phone-alt"></i>
+            <a href="tel:8790096689" style="color: var(--accent-gold-light); font-weight: 600;">8790096689</a>
+          </div>
+          <div class="quick-info-item">
+            <i class="fas fa-clock"></i>
+            <span>6:30 AM – 10:30 PM (Daily)</span>
+          </div>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#menu" class="btn btn-primary">
+            <i class="fas fa-utensils"></i> View Menu
+          </a>
+          <a href="tel:8790096689" class="btn btn-secondary">
+            <i class="fas fa-phone-alt"></i> Call Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         2. MENU SECTION (INTERACTIVE TABS & CARDS)
+         ========================================== -->
+    <section class="menu-section" id="menu">
+      <div class="container">
+        <h2 class="section-title">Authentic Andhra Menu</h2>
+        <p class="section-subtitle">Freshly Prepared Daily Tiffins & Specials</p>
+
+        <div class="ornamental-divider">
+          <i class="fas fa-leaf leaf-icon"></i>
+        </div>
+
+        <!-- Menu Tabs Toggle (Morning / Evening) -->
+        <div class="menu-tabs-wrapper">
+          <div class="menu-tabs" role="tablist">
+            <button class="tab-btn active" id="tab-morning" data-meal-tab="morning" role="tab" aria-selected="true">
+              <i class="fas fa-sun"></i> Morning Menu
+            </button>
+            <button class="tab-btn" id="tab-evening" data-meal-tab="evening" role="tab" aria-selected="false">
+              <i class="fas fa-moon"></i> Evening Menu
+            </button>
+          </div>
+        </div>
+
+        <!-- Menu Grid: Section A & Section B -->
+        <div class="menu-grid">
+
+          <!-- SECTION A: MENU & PRICES -->
+          <div class="menu-column">
+            <div class="menu-col-header header-green">
+              <h3 class="menu-col-title">
+                <i class="fas fa-leaf"></i> Menu & Prices
+              </h3>
+              <span class="col-badge">Everyday Fresh</span>
+            </div>
+
+            <div class="cards-list" id="standard-menu-list">
+
+              <!-- Item 1: Uggani Bajji -->
+              <div class="menu-card" data-meal-type="both">
+                <img src="assets/images/uggani.png" alt="Uggani Bajji" class="card-img-placeholder">
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Uggani Bajji
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <p class="card-desc">Authentic Rayalaseema seasoned puffed rice served with hot crispy Mirchi Bajji.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 2: Gunta Ponganalu -->
+              <div class="menu-card" data-meal-type="both">
+                <img src="assets/images/ponganalu.png" alt="Gunta Ponganalu" class="card-img-placeholder">
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Gunta Ponganalu
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <p class="card-desc">Golden crisp savory rice dumplings cooked in traditional appe pan with chutney.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Item 3: Jonna Roti -->
+              <div class="menu-card" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#E5DAC6; color:#7A6245; font-size:1.5rem;">
+                  <i class="fas fa-bread-slice"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Jonna Roti
+                    </div>
+                    <span class="card-price">Rs. 25</span>
+                  </div>
+                  <p class="card-desc">Healthy hand-patted sorghum millet roti served fresh with authentic spicy
+                    chutney.</p>
+                </div>
+              </div>
+
+              <!-- Item 4: Bajjilu -->
+              <div class="menu-card" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#E5DAC6; color:#7A6245; font-size:1.5rem;">
+                  <i class="fas fa-pepper-hot"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Bajjilu (Assorted)
+                    </div>
+                    <span class="card-price">Rs. 40</span>
+                  </div>
+                  <p class="card-desc">Crispy fritters: Mirchi, Aloo, Vankaya, Tamalapaku, Cabbage, and Onion.</p>
+                </div>
+              </div>
+
+              <!-- Item 5: Punugulu -->
+              <div class="menu-card" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#E5DAC6; color:#7A6245; font-size:1.5rem;">
+                  <i class="fas fa-cookie-bite"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Punugulu
+                    </div>
+                    <span class="card-price">Rs. 40</span>
+                  </div>
+                  <p class="card-desc">Crispy bite-sized rice batter fried snacks served with groundnut and ginger
+                    chutneys.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- SECTION B: DAILY SPECIAL ITEMS -->
+          <div class="menu-column">
+            <div class="menu-col-header header-rust">
+              <h3 class="menu-col-title">
+                <i class="fas fa-calendar-star"></i> Daily Special Items
+              </h3>
+              <span class="col-badge" style="background-color: #FFF; color: var(--accent-rust);">Rs. 50 Each</span>
+            </div>
+
+            <div class="cards-list" id="special-menu-list">
+
+              <!-- Sunday: Sabudana Khichdi (Day index 0) -->
+              <div class="menu-card special-card" data-day-index="0" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-bowl-food"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Sabudana Khichdi
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Sunday Special</span>
+                  <p class="card-desc">Light tapioca pearls tossed with roasted peanuts, curry leaves, and green
+                    chillies.</p>
+                </div>
+              </div>
+
+              <!-- Monday: Millet Upma (Day index 1) -->
+              <div class="menu-card special-card" data-day-index="1" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-bowl-rice"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Millet Upma
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Monday Special</span>
+                  <p class="card-desc">Nutritious foxtail millet cooked with fresh vegetables and aromatic ghee
+                    tempering.</p>
+                </div>
+              </div>
+
+              <!-- Tuesday: Tapplentu (Day index 2) -->
+              <div class="menu-card special-card" data-day-index="2" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-circle-dot"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Tapplentu (Thalipape)
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Tuesday Special</span>
+                  <p class="card-desc">Traditional spiced rice flour flatbread with onions, coriander, and chana dal.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Wednesday: Poha Khichdi (Day index 3) -->
+              <div class="menu-card special-card" data-day-index="3" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Poha Khichdi
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Wednesday Special</span>
+                  <p class="card-desc">Flattened rice tempered with mustard seeds, peanuts, turmeric, and lemon juice.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Thursday: Millet Pongal (Day index 4) -->
+              <div class="menu-card special-card" data-day-index="4" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-mortar-pestle"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Millet Pongal
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Thursday Special</span>
+                  <p class="card-desc">Savory yellow moong dal and millet porridge tempered with black pepper and
+                    cashews.</p>
+                </div>
+              </div>
+
+              <!-- Friday: Masala Oats Upma (Day index 5) -->
+              <div class="menu-card special-card" data-day-index="5" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-carrot"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Masala Oats Upma
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Friday Special</span>
+                  <p class="card-desc">Rolled oats cooked with handpicked spices, green peas, carrots, and cilantro.</p>
+                </div>
+              </div>
+
+              <!-- Saturday: Dahi Wada (Day index 6) -->
+              <div class="menu-card special-card" data-day-index="6" data-meal-type="both">
+                <div class="card-img-placeholder"
+                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
+                  <i class="fas fa-stroopwafel"></i>
+                </div>
+                <div class="card-details">
+                  <div class="card-header-row">
+                    <div class="card-title">
+                      <span class="veg-indicator" title="Pure Vegetarian"></span>
+                      Dahi Wada (Perugu Vada)
+                    </div>
+                    <span class="card-price">Rs. 50</span>
+                  </div>
+                  <span class="day-badge">Saturday Special</span>
+                  <p class="card-desc">Fluffy lentil wadas soaked in seasoned, tempered creamy yogurt topped with
+                    boondi.</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         3. ABOUT SECTION
+         ========================================== -->
+    <section class="about-section" id="about">
+      <div class="container">
+        <div class="about-grid">
+
+          <div class="about-image-wrapper">
+            <img src="assets/images/hero.png" alt="Authentic Andhra Cooking at Seemandhra Ruchulu">
+            <div class="about-badge-overlay">
+              <i class="fas fa-heart" style="color: var(--accent-rust);"></i> Handcrafted with Love
+            </div>
+          </div>
+
+          <div class="about-content">
+            <h2 style="font-family: var(--font-heading);">Our Heritage & Story</h2>
+
+            <p class="about-text">
+              At <strong>Seemandhra Ruchulu</strong>, we are dedicated to serving authentic Andhra home-style tiffins
+              and delicacies right in the heart of Hyderabad. Our recipes are passed down through generations, capturing
+              the true essence of traditional village kitchens.
+            </p>
+
+            <p class="about-text">
+              We believe in <strong>"100% Home Style Taste"</strong> — using fresh, locally-sourced ingredients,
+              stone-ground spices, and traditional iron-griddle cooking methods without any artificial colors or
+              preservatives.
+            </p>
+
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i> Pure Home-Style Spices
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i> 100% Vegetarian
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i> Daily Fresh Preparation
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-check-circle"></i> Authentic Family Recipes
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         4. CONTACT SECTION
+         ========================================== -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <h2 class="section-title">Visit or Contact Us</h2>
+        <p class="section-subtitle">We would love to serve you authentic Andhra tiffins</p>
+
+        <div class="ornamental-divider">
+          <i class="fas fa-leaf leaf-icon"></i>
+        </div>
+
+        <div class="contact-grid">
+
+          <!-- Contact Details Card -->
+          <div class="contact-info-card">
+            <h3>Get In Touch</h3>
+
+            <div class="contact-detail-list">
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Phone Number</h4>
+                  <p><a href="tel:8790096689" style="font-weight: 700; color: var(--accent-rust);">+91 8790096689</a>
+                  </p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon" style="background-color: #25D366; color: #FFF;">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>WhatsApp Chat & Order</h4>
+                  <p><a href="https://wa.me/918790096689" target="_blank" rel="noopener noreferrer"
+                      style="font-weight: 600;">Chat on WhatsApp (+91 8790096689)</a></p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Restaurant Location</h4>
+                  <p>Main Road, Madhapur & Kukatpally, Hyderabad, Telangana - 500081</p>
+                </div>
+              </div>
+
+              <div class="contact-detail-item">
+                <div class="contact-icon">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-detail-text">
+                  <h4>Opening Hours</h4>
+                  <p>Monday – Sunday: 6:30 AM to 10:30 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="contact-buttons-group">
+              <a href="tel:8790096689" class="btn btn-secondary">
+                <i class="fas fa-phone-alt"></i> Call 8790096689
+              </a>
+              <a href="https://wa.me/918790096689" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i> WhatsApp Order
+              </a>
+            </div>
+
+            <!-- Map Container -->
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.953683072213!2d78.3844855!3d17.4477543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11bbe7be7792411b!2sMadhapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                title="Seemandhra Ruchulu Hyderabad Location Map" loading="lazy"></iframe>
+            </div>
+          </div>
+
+          <!-- Contact Form Card -->
+          <div class="contact-form-card">
+            <h3>Send Us a Message</h3>
+
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name">Your Full Name *</label>
+                <input type="text" id="form-name" class="form-control" placeholder="Enter your name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-phone">Phone Number *</label>
+                <input type="tel" id="form-phone" class="form-control" placeholder="Enter 10-digit mobile number"
+                  required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message / Catering Query</label>
+                <textarea id="form-message" class="form-control"
+                  placeholder="Ask about catering, party orders, or daily special availability..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%;">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <div id="form-alert" class="form-alert"></div>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <img src="assets/images/logo.jpeg" alt="Seemandhra Ruchulu Logo" class="footer-logo">
+        <div class="footer-brand">Seemandhra Ruchulu</div>
+        <p class="footer-tagline">"Where tradition meets taste." — 100% Home Style Taste</p>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Seemandhra Ruchulu, Hyderabad. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky Mobile Quick Action Bar -->
+  <div class="sticky-mobile-bar">
+    <div class="sticky-mobile-bar-content">
+      <a href="tel:8790096689" class="btn btn-primary">
+        <i class="fas fa-phone-alt"></i> Call Now
+      </a>
+      <a href="https://wa.me/918790096689" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </a>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
