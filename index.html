@@ -72,7 +72,7 @@
         <div class="quick-info-bar">
           <div class="quick-info-item">
             <i class="fas fa-map-marker-alt"></i>
-            <span>Madhapur & Kukatpally, Hyderabad</span>
+            <span>Raaga Food Court, Kistareddypet, Hyderabad</span>
           </div>
           <div class="quick-info-item">
             <i class="fas fa-phone-alt"></i>
@@ -80,7 +80,7 @@
           </div>
           <div class="quick-info-item">
             <i class="fas fa-clock"></i>
-            <span>6:30 AM – 10:30 PM (Daily)</span>
+            <span>4:00 PM – 10:00 PM (Daily)</span>
           </div>
         </div>
 
@@ -96,284 +96,78 @@
     </section>
 
     <!-- ==========================================
-         2. MENU SECTION (INTERACTIVE TABS & CARDS)
+         2. MENU SECTION
          ========================================== -->
     <section class="menu-section" id="menu">
       <div class="container">
         <h2 class="section-title">Authentic Andhra Menu</h2>
-        <p class="section-subtitle">Freshly Prepared Daily Tiffins & Specials</p>
+        <p class="section-subtitle">Freshly Prepared Andhra Home Style Tiffins</p>
 
         <div class="ornamental-divider">
           <i class="fas fa-leaf leaf-icon"></i>
         </div>
 
-        <!-- Menu Tabs Toggle (Morning / Evening) -->
-        <div class="menu-tabs-wrapper">
-          <div class="menu-tabs" role="tablist">
-            <button class="tab-btn active" id="tab-morning" data-meal-tab="morning" role="tab" aria-selected="true">
-              <i class="fas fa-sun"></i> Morning Menu
-            </button>
-            <button class="tab-btn" id="tab-evening" data-meal-tab="evening" role="tab" aria-selected="false">
-              <i class="fas fa-moon"></i> Evening Menu
-            </button>
-          </div>
-        </div>
+        <!-- Menu Cards Grid (4 items) -->
+        <div class="menu-grid-clean">
 
-        <!-- Menu Grid: Section A & Section B -->
-        <div class="menu-grid">
-
-          <!-- SECTION A: MENU & PRICES -->
-          <div class="menu-column">
-            <div class="menu-col-header header-green">
-              <h3 class="menu-col-title">
-                <i class="fas fa-leaf"></i> Menu & Prices
-              </h3>
-              <span class="col-badge">Everyday Fresh</span>
-            </div>
-
-            <div class="cards-list" id="standard-menu-list">
-
-              <!-- Item 1: Uggani Bajji -->
-              <div class="menu-card" data-meal-type="both">
-                <img src="assets/images/uggani.png" alt="Uggani Bajji" class="card-img-placeholder">
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Uggani Bajji
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <p class="card-desc">Authentic Rayalaseema seasoned puffed rice served with hot crispy Mirchi Bajji.
-                  </p>
+          <!-- Item 1: Uggani Bajji -->
+          <div class="menu-card">
+            <img src="assets/images/Uggani Bajji.jpg" alt="Uggani Bajji" class="card-img-placeholder">
+            <div class="card-details">
+              <div class="card-header-row">
+                <div class="card-title">
+                  <span class="veg-indicator" title="Pure Vegetarian"></span>
+                  Uggani Bajji
                 </div>
+                <span class="card-price">Rs. 60</span>
               </div>
-
-              <!-- Item 2: Gunta Ponganalu -->
-              <div class="menu-card" data-meal-type="both">
-                <img src="assets/images/ponganalu.png" alt="Gunta Ponganalu" class="card-img-placeholder">
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Gunta Ponganalu
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <p class="card-desc">Golden crisp savory rice dumplings cooked in traditional appe pan with chutney.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Item 3: Jonna Roti -->
-              <div class="menu-card" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#E5DAC6; color:#7A6245; font-size:1.5rem;">
-                  <i class="fas fa-bread-slice"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Jonna Roti
-                    </div>
-                    <span class="card-price">Rs. 25</span>
-                  </div>
-                  <p class="card-desc">Healthy hand-patted sorghum millet roti served fresh with authentic spicy
-                    chutney.</p>
-                </div>
-              </div>
-
-              <!-- Item 4: Bajjilu -->
-              <div class="menu-card" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#E5DAC6; color:#7A6245; font-size:1.5rem;">
-                  <i class="fas fa-pepper-hot"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Bajjilu (Assorted)
-                    </div>
-                    <span class="card-price">Rs. 40</span>
-                  </div>
-                  <p class="card-desc">Crispy fritters: Mirchi, Aloo, Vankaya, Tamalapaku, Cabbage, and Onion.</p>
-                </div>
-              </div>
-
-              <!-- Item 5: Punugulu -->
-              <div class="menu-card" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#E5DAC6; color:#7A6245; font-size:1.5rem;">
-                  <i class="fas fa-cookie-bite"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Punugulu
-                    </div>
-                    <span class="card-price">Rs. 40</span>
-                  </div>
-                  <p class="card-desc">Crispy bite-sized rice batter fried snacks served with groundnut and ginger
-                    chutneys.</p>
-                </div>
-              </div>
-
+              <p class="card-desc">Authentic Rayalaseema seasoned puffed rice served with hot crispy Mirchi Bajji.</p>
             </div>
           </div>
 
-          <!-- SECTION B: DAILY SPECIAL ITEMS -->
-          <div class="menu-column">
-            <div class="menu-col-header header-rust">
-              <h3 class="menu-col-title">
-                <i class="fas fa-calendar-star"></i> Daily Special Items
-              </h3>
-              <span class="col-badge" style="background-color: #FFF; color: var(--accent-rust);">Rs. 50 Each</span>
+          <!-- Item 2: Gunta Ponganalu -->
+          <div class="menu-card">
+            <img src="assets/images/Gunta Ponganalu.jpeg" alt="Gunta Ponganalu" class="card-img-placeholder">
+            <div class="card-details">
+              <div class="card-header-row">
+                <div class="card-title">
+                  <span class="veg-indicator" title="Pure Vegetarian"></span>
+                  Gunta Ponganalu
+                </div>
+                <span class="card-price">Rs. 50</span>
+              </div>
+              <p class="card-desc">Golden crisp savory rice dumplings cooked in traditional appe pan with chutney.</p>
             </div>
+          </div>
 
-            <div class="cards-list" id="special-menu-list">
-
-              <!-- Sunday: Sabudana Khichdi (Day index 0) -->
-              <div class="menu-card special-card" data-day-index="0" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-bowl-food"></i>
+          <!-- Item 3: Bajji Varieties -->
+          <div class="menu-card">
+            <img src="assets/images/Bajji Varieties.jpeg" alt="Bajji Varieties" class="card-img-placeholder">
+            <div class="card-details">
+              <div class="card-header-row">
+                <div class="card-title">
+                  <span class="veg-indicator" title="Pure Vegetarian"></span>
+                  Bajji Varieties
                 </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Sabudana Khichdi
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Sunday Special</span>
-                  <p class="card-desc">Light tapioca pearls tossed with roasted peanuts, curry leaves, and green
-                    chillies.</p>
-                </div>
+                <span class="card-price">Rs. 50</span>
               </div>
+              <p class="card-desc">Crispy hot fritters: Mirchi, Aloo, Vankaya, Tamalapaku, Cabbage, and Onion.</p>
+            </div>
+          </div>
 
-              <!-- Monday: Millet Upma (Day index 1) -->
-              <div class="menu-card special-card" data-day-index="1" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-bowl-rice"></i>
+          <!-- Item 4: Punugulu -->
+          <div class="menu-card">
+            <img src="assets/images/Punugulu.jpeg" alt="Punugulu" class="card-img-placeholder">
+            <div class="card-details">
+              <div class="card-header-row">
+                <div class="card-title">
+                  <span class="veg-indicator" title="Pure Vegetarian"></span>
+                  Punugulu
                 </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Millet Upma
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Monday Special</span>
-                  <p class="card-desc">Nutritious foxtail millet cooked with fresh vegetables and aromatic ghee
-                    tempering.</p>
-                </div>
+                <span class="card-price">Rs. 50</span>
               </div>
-
-              <!-- Tuesday: Tapplentu (Day index 2) -->
-              <div class="menu-card special-card" data-day-index="2" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-circle-dot"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Tapplentu (Thalipape)
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Tuesday Special</span>
-                  <p class="card-desc">Traditional spiced rice flour flatbread with onions, coriander, and chana dal.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Wednesday: Poha Khichdi (Day index 3) -->
-              <div class="menu-card special-card" data-day-index="3" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-seedling"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Poha Khichdi
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Wednesday Special</span>
-                  <p class="card-desc">Flattened rice tempered with mustard seeds, peanuts, turmeric, and lemon juice.
-                  </p>
-                </div>
-              </div>
-
-              <!-- Thursday: Millet Pongal (Day index 4) -->
-              <div class="menu-card special-card" data-day-index="4" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-mortar-pestle"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Millet Pongal
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Thursday Special</span>
-                  <p class="card-desc">Savory yellow moong dal and millet porridge tempered with black pepper and
-                    cashews.</p>
-                </div>
-              </div>
-
-              <!-- Friday: Masala Oats Upma (Day index 5) -->
-              <div class="menu-card special-card" data-day-index="5" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-carrot"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Masala Oats Upma
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Friday Special</span>
-                  <p class="card-desc">Rolled oats cooked with handpicked spices, green peas, carrots, and cilantro.</p>
-                </div>
-              </div>
-
-              <!-- Saturday: Dahi Wada (Day index 6) -->
-              <div class="menu-card special-card" data-day-index="6" data-meal-type="both">
-                <div class="card-img-placeholder"
-                  style="display:flex; align-items:center; justify-content:center; background:#F5EAE0; color:#A0431E; font-size:1.5rem;">
-                  <i class="fas fa-stroopwafel"></i>
-                </div>
-                <div class="card-details">
-                  <div class="card-header-row">
-                    <div class="card-title">
-                      <span class="veg-indicator" title="Pure Vegetarian"></span>
-                      Dahi Wada (Perugu Vada)
-                    </div>
-                    <span class="card-price">Rs. 50</span>
-                  </div>
-                  <span class="day-badge">Saturday Special</span>
-                  <p class="card-desc">Fluffy lentil wadas soaked in seasoned, tempered creamy yogurt topped with
-                    boondi.</p>
-                </div>
-              </div>
-
+              <p class="card-desc">Crispy bite-sized rice batter fried snacks served with groundnut and ginger chutneys.
+              </p>
             </div>
           </div>
 
@@ -477,7 +271,11 @@
                 </div>
                 <div class="contact-detail-text">
                   <h4>Restaurant Location</h4>
-                  <p>Main Road, Madhapur & Kukatpally, Hyderabad, Telangana - 500081</p>
+                  <p><a
+                      href="https://www.google.com/maps/dir/?api=1&destination=Raaga+Food+Court,+Sri+ram+nagar,+opposite+to+krishna+Reddy+sweets,+kistareddypet,+Hyderabad,+Telangana"
+                      target="_blank" rel="noopener noreferrer"
+                      style="color: var(--text-dark); text-decoration: underline;">Raaga Food Court, Sri ram nagar,
+                      opposite to krishna Reddy sweets, kistareddypet, Hyderabad, Telangana</a></p>
                 </div>
               </div>
 
@@ -504,9 +302,14 @@
             <!-- Map Container -->
             <div class="map-container">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15224.953683072213!2d78.3844855!3d17.4477543!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9158f201b205%3A0x11bbe7be7792411b!2sMadhapur%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                src="https://maps.google.com/maps?q=Raaga+Food+Court,+Sri+ram+nagar,+opposite+to+krishna+Reddy+sweets,+kistareddypet,+Hyderabad,+Telangana&t=&z=15&ie=UTF8&iwloc=&output=embed"
                 title="Seemandhra Ruchulu Hyderabad Location Map" loading="lazy"></iframe>
             </div>
+            <a href="https://www.google.com/maps/dir/?api=1&destination=Raaga+Food+Court,+Sri+ram+nagar,+opposite+to+krishna+Reddy+sweets,+kistareddypet,+Hyderabad,+Telangana"
+              target="_blank" rel="noopener noreferrer" class="btn btn-outline-gold"
+              style="margin-top: 1rem; width: 100%;">
+              <i class="fas fa-directions"></i> Get Directions on Google Maps
+            </a>
           </div>
 
           <!-- Contact Form Card -->
@@ -552,7 +355,7 @@
       <div class="footer-content">
         <img src="assets/images/logo.jpeg" alt="Seemandhra Ruchulu Logo" class="footer-logo">
         <div class="footer-brand">Seemandhra Ruchulu</div>
-        <p class="footer-tagline">"Where tradition meets taste." — 100% Home Style Taste</p>
+        <p class="footer-tagline">"Where tradition meets taste." - 100% Home Style Taste</p>
       </div>
       <div class="footer-bottom">
         <p>&copy; 2026 Seemandhra Ruchulu, Hyderabad. All Rights Reserved.</p>
